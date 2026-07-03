@@ -3,13 +3,12 @@ import webbrowser
 import pyttsx3
 import time
 import requests
-import musiclibrary   # 👈 missing tha
+import musiclibrary   
 
 recognizer = sr.Recognizer()
-engine = pyttsx3.init("sapi5")   # 👈 baar baar init nahi karna
-
+engine = pyttsx3.init("sapi5")  
 def speak(text):
-    engine = pyttsx3.init()   # 👈 wapas yaha init kar
+    engine = pyttsx3.init()   
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[0].id)  # 👈 voice fix
 
